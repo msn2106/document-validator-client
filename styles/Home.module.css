@@ -166,3 +166,91 @@ a.secondary {
     filter: invert();
   }
 }
+
+/*******
+
+/* styles/Home.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+  margin-bottom: 20px; /* Increase bottom margin to separate controls */
+}
+
+.label {
+  font-size: 1.1rem;  /* Slightly larger font size */
+  font-weight: 600;   /* Make label bold for better visibility */
+  margin-bottom: 8px; /* Increase margin to space out label from input */
+  color: #444;       /* Darken label color for better contrast */
+}
+
+/* Locally scoped styles for select and file input */
+.select, .fileInput {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff; /* Remove any default dark background */
+  color: #333; /* Set text color to dark for better contrast */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Remove the dark background for select options */
+.select {
+  background-color: #fff; /* Ensure select has a light background */
+}
+
+.select option {
+  background-color: #fff; /* Ensure options have a light background */
+  color: #333; /* Ensure text in options is dark */
+}
+
+/* Hover effect for select and file input */
+.select:hover, .fileInput:hover {
+  border-color: #007bff; /* Change border color on hover */
+  background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+/* Focus effect for select and file input */
+.select:focus, .fileInput:focus {
+  border-color: #0056b3; /* Darker blue border on focus */
+  background-color: #e9f1fb; /* Lighter background on focus */
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
